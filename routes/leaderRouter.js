@@ -6,7 +6,7 @@ const leaderRouter = express.Router();
 
 const Leader = require('../models/leaders');
 
-promoRouter.use(bodyParser.json());
+leaderRouter.use(bodyParser.json());
 
 leaderRouter.route('/')
 .get((req,res,next) => {
